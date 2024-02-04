@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Acko Website </title>
+
+    <!---cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<!---Boostrap link-->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous"
+/>
+
+<!--- index.css-->
+<link rel="stylesheet" href="Style/index.css">
+<!----Boostrap-->
+<link rel="stylesheet" href="Style/custom_boostrap.css">
+
+
+</head>
+<body>
+    <!----All Screen -->
+    <div class="g_screen_view g_bg_primary">
+        <header class="g_container pt-3 d-flex justify-content-between align-items-center ">
+            <div class="g_left">
+                <nav>
+                    <ul class="d-flex justify-content-between align-items-center gap-5">
+                        <li>
+                            <a href="">
+                               <img src="Images/logo.svg">   
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                              Products <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                            <a href="">
+                              Renewals <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                              Claims <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                              Resources
+                              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                        </li>
+            
+                    </ul>
+                </nav>
+            </div>
+            <div class="g_right" style=" padding-right: 140px;">
+                <button class="btn btn-light">Login</button>
+                <button class="btn btn-success ms-2">Sign Up</button>
+              </div>
+        </header>
+      <!----service logo-->
+      <main>
+        <!--service section-->
+        <div class="g_bg_primary pt-3">
+
+        <section
+          class="g_services d-flex justify-content-between align-items-center text-center "
+        >
+          <div class="g_box">
+            <div id="car" class="g_icon text-white">
+              <i class="fa fa-car" aria-hidden="true"></i>
+            </div>
+            <h6>Car</h6>
+          </div>
+          <div class="g_box">
+            <div id="bike" class="g_icon text-white">
+              <i class="fa fa-motorcycle" aria-hidden="true"></i>
+            </div>
+            <h6>Bike</h6>
+          </div>
+          <div class="g_box">
+            <div id="health" class="g_icon text-white">
+              <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            </div>
+            <h6>Health</h6>
+          </div>
+          <div class="g_box">
+            <div id="life" class="g_icon text-white">
+              <i class="fa fa-heart" aria-hidden="true"></i>
+            </div>
+            <h6>Life</h6>
+          </div>
+          <div class="g_box">
+            <div id="travel" class="g_icon text-white">
+              <i class="fa fa-plane" aria-hidden="true"></i>
+            </div>
+            <h6>Travel</h6>
+          </div>
+        </section>
+
+        <!-- services   car -->
+         <section class="g_car_service_banner g_banner_common  d-flex justify-content-between ">
+            <div class="g_left_img ">
+                <img 
+                width="80%"
+                height="100%" 
+                src="Images/Saif Ali-khan.png" >
+            </div>
+            <div class="g_center_form_box ">
+                <div class="g_center_form g_bg_primary2 p-3 py-3 ">
+                  <form action="">
+                    <h4 class="text-white text-center pt-2">
+                      Get up to 85%* off on car insurance
+                    </h4>
+                    <div class="g_input_box bg-white d-flex p-3">
+                      <input
+                        type="text"
+                        placeholder="Enter Your Car Number"
+                        
+                      />
+                      <button class="btn btn-success">Get quote</button>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="g_center_form g_bg_primary2 p-3 mt-3 text-white d-flex justify-content-between"
+                >
+                  <div class="g_icon g_bg_primary">
+                    <i class="fa fa-car" aria-hidden="true"></i>
+                  </div>
+                  <div class="g_content">
+                    <h6>Looking to insure brand new car?</h6>
+                    <h6>Zero commissions, big savings</h6>
+                  </div>
+                  <button class="btn btn-outline-light">Check prices</button>
+                </div>
+              </div>
+    
+              <div class="g_right_img ">
+            <img 
+            width="80%"
+            height="100%" src="Images/Sara.png" class="rounded float-end">
+          </div>
+
+         </section>  
+         
+         <!-----Service Bike-->
+
+         <section class="g_bike_service_banner g_banner_common  d-flex justify-content-between">
+          <div class="g_left_img ">
+              <img 
+              width="80%"
+              height="100%" 
+              src="Images/Bike left Side.svg" >
+          </div>
+          <div class="g_center_form_box ">
+              <div class="g_center_form g_bg_primary2 p-3 py-3 ">
+                <form action="">
+                  <h4 class="text-white text-center pt-2">
+                    Bike insurance starting at ₹555
+                  </h4>
+                  <div class="g_input_box bg-white d-flex p-3">
+                    <input
+                      type="text"
+                      placeholder="Enter Your Car Number"
+                      style="flex: 1"
+                    />
+                    <button class="btn btn-success">Get quote</button>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="g_center_form g_bg_primary2 p-3 mt-3 text-white d-flex justify-content-between"
+              >
+                <div class="g_icon g_bg_primary">
+                  <i class="fa fa-car" aria-hidden="true"></i>
+                </div>
+                <div class="g_content">
+                  <h6>Looking to insure brand new car?</h6>
+                  <h6>Zero commissions, big savings</h6>
+                </div>
+                <button class="btn btn-outline-light">Check prices</button>
+              </div>
+            </div>
+  
+            <div class="g_right_img ">
+          <img 
+          width="80%"
+          height="100%" src="Images/Bike Right side.svg" class="rounded float-end">
+        </div>
+       </section>      
+
+       <!----Health Service -->
+       
+       <section class="g_health_service_banner g_banner_common  d-flex justify-content-between ">
+        <div class="g_left_img">
+            <img 
+            width="80%"
+            height="100%" 
+            src="Images/Sanju-Bhai.png" >
+        </div>
+        <div class="g_center_form_box ">
+            <div class="g_center_form g_bg_primary2 p-3 py-3 ">
+              <form action="">
+                <!-- <h4 class="text-white text-center pt-2">
+                  Bike insurance starting at ₹555
+                </h4> -->
+                <div
+                  class="bg-white mx-auto p-1 rounded-pill px-3"
+                  style="width: 50%"
+                >
+                  <small class="g_text_gradient text-center" style="font-size: 12px"
+                    >ACKO Platinum Health Plan</small
+                  >
+                </div>
+                <h4 class="text-white text-center mt-3 fw-bold">
+                  India’s #1 health plan
+                </h4>
+                <p class="text-center fw-bold text-white mb-3 mt-2">
+                  rated by <span style="color: #f99d1c">mint</span>
+                </p>
+                <div class="text-center ">
+                  <button class="btn btn-success px-5 py-2 ">
+                    Check Prices
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div
+              class="g_center_form g_bg_primary2 p-3 mt-3 text-white d-flex justify-content-between"
+            >
+              <div class="g_icon g_bg_primary">
+                <i class="fa fa-car" aria-hidden="true"></i>
+              </div>
+              <div class="g_content">
+                <h6>Looking to insure brand new car?</h6>
+                <h6>Zero commissions, big savings</h6>
+              </div>
+              <button class="btn btn-outline-light">Check prices</button>
+            </div>
+          </div>
+
+          <div class="g_right_img ">
+        <img 
+        width="80%"
+        height="100%" src="Images/circuit.png" class="rounded float-end">
+      </div>
+
+     </section>      
+
+     <!------Life section --> 
+
+     <section class="g_life_service_banner g_banner_common  d-flex justify-content-between ">
+      <div class="g_left_img">
+          <img 
+          width="80%"
+          height="100%" 
+          src="Images/Life-left-side.svg" >
+      </div>
+      <div class="g_center_form_box ">
+          <div class="g_center_form g_bg_primary2 p-3 py-3 ">
+            <form action="">
+              <!-- <h4 class="text-white text-center pt-2">
+                Bike insurance starting at ₹555
+              </h4> -->
+              <div
+                class="text-center text-white pt-3">
+                <h2>Coming soon </h2>
+                <h6 class="text-white text-center  ">
+                  Life insurance is about to get a whole lot better
+                </h6>  
+              </div>
+              <div class="text-center pt-4">
+                <button class="btn btn-success px-5 py-2 bg-success ">
+                  Check Prices
+                </button>
+                <div class="text-center text-white pt-3 py-2">
+                  <h6 style="font-size: 8px;">A product of ACKO Life Insurance - ARN:ALIL/2023-24/09/001  </h6>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="g_right_img ">
+      <img 
+      width="80%"
+      height="100%" src="Images/Life-side-images.svg" class="rounded float-end">
+    </div>
+
+   </section>      
+ 
+   <!----Travel section -->
+
+   <section class="g_travel_service_banner g_banner_common  d-flex justify-content-between">
+    <div class="g_left_img">
+        <img 
+        width="80%"
+        height="100%" 
+        src="Images/Travel Left side images.svg" >
+    </div>
+    <div class="g_center_form_box ">
+      <div class="g_center_form g_bg_primary2 p-3 py-3 ">
+        <form action="">
+          <!-- <h4 class="text-white text-center pt-2">
+            Bike insurance starting at ₹555
+          </h4> -->
+          <div
+            class="text-center text-white pt-3  ">
+            <h3 class="fw-bold">Travel the world<br> without a worry</h3>
+            <h6 class="pt-2 fw-small">From medical emergencies to<br>
+              missed flights, we cover it all.
+              </h6>
+          </div>
+          <div class="text-center pt-4 pb-2" >
+            <button class="btn btn-success   bg-success " style="padding: 9px 80px 9px 80px ;">
+              Let's Go 
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+      <div class="g_right_img ">
+    <img 
+    width="80%"
+    height="100%" src="Images/Travel right side images.svg" class="rounded float-end">
+  </div>
+ </section>      
+  </div>  
+</div>   
+        <!----Video section-->     
+<section class="g_video_section g_bg_dark text-white py-5">
+  <div class="g_video_container text-center ">
+    <div class="g_btns">
+      <button id="insurance_video" style="border-color : green;" class="btn  rounded-pill btn-lg text-white pr-5">
+        Health 
+      </button>
+      <button id="insurance_video" style="background: #222232;" class="btn text-white  rounded-pill btn-lg  pl-5">
+        Car
+      </button>
+     </div>
+     <div class="text-center text-white my-4">
+        <h4> #ACKO_Health_Hai_Na_Mamu</h4>
+    </div>
+  
+    <!---video section block left side-->
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <div class="g_video_wrapper">
+            <div class="g_video_box">
+              <video
+              id="g_current_video"
+              preload="metadata"
+              controls
+              src="video/Insurance 1.mp4">
+            </video>
+            </div>
+          </div>
+          <div class="g_details row text-start">
+            <div class="col-12 col-lg-9">
+              <h6 id="title">
+                Zero Waiting Period with ACKO | Health Insurance ki subah
+                ho gayi hai maamu! | ACKO Platinum Health Plan
+              </h6>
+              <p>4 months ago • 28.8K views</p>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="g_btns d-flex gap-3">
+                <button
+                  style="background: #222232; font-size: 12px"
+                  class="btn text-white rounded-pill btn-sm"
+                >
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                  988
+                </button>
+                <button
+                  style="background: #222232; font-size: 12px"
+                  class="btn text-white g_bg_dark_light rounded-pill btn-sm"
+                >
+                  <i class="fa fa-share" aria-hidden="true"></i> Share
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> 
+      
+        <!-----Right side  block-->
+        <div class="col-12 col-lg-5">
+          <div
+            class="g_bg_dark_light g_video_list p-3 rounded-3 my-1 text-start">
+            <!--Video list-->
+            <div class="row mx-1 g_cursor_pointer g_video">
+              <div class="col-12 col-lg-5">
+                <div class="g_thumbnail_video">
+                  <video
+                    preload="metadata"
+                    src="video/Insurance 1.mp4"
+                  ></video>
+                </div>
+              </div>
+              <div class="col-12 col-lg-7">
+                <h6>Zero Waiting Period with ACKO | Health Insurance ki subah ho gayi....</h6>
+                <span>30.3K views | <span>0:30</span> </span>
+              </div>
+            </div>
+
+            <div class="row mt-3 border-top outline-light pt-3 mx-1 g_cursor_pointer g_video">
+            <div class="col-12 col-lg-5">
+              <div class="g_thumbnail_video">
+                <video
+                  preload="metadata"
+                  src="video/Insurance_2.mp4"
+                ></video>
+              </div>
+            </div>
+            <div class="col-12 col-lg-7">
+              <h6>
+                Please disclose to avoid Claim Rejections | Sub kuch sach
+                sach...
+              </h6>
+              <span> 24.3K views | <span>0:30</span> </span>
+            </div>
+          </div>
+
+          <div class="row mt-3 border-top outline-light pt-3 mx-1 g_cursor_pointer g_video">
+          <div class="col-12 col-lg-5">
+            <div class="g_thumbnail_video">
+              <video
+                preload="metadata"
+                src="video/insurance_3.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h6>
+              ACKO pe 100% Bill Payment Milega! | ACKO Platinum Health...</h6>
+            <span>16.4K views | <span>0:30</span> </span>
+          </div>
+        </div>
+
+        <div class="row mt-3 border-top outline-light pt-3 mx-1 g_cursor_pointer g_video">
+          <div class="col-12 col-lg-5">
+            <div class="g_thumbnail_video">
+              <video
+                preload="metadata"
+                src="video/Insurance_4.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h6>
+              Scan Karvanu, Claim Karvanu! | ACKO Platinum Health Plan</h6>
+            <span>13.7K views | <span>0:10</span> </span>
+          </div>
+        </div>
+
+        <div class="row mt-3 border-top outline-light pt-3 mx-1 g_cursor_pointer g_video">
+          <div class="col-12 col-lg-5">
+            <div class="g_thumbnail_video">
+              <video
+                preload="metadata"
+                src="video/insurance_5.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h6>
+              ACKO Se Top Up Kara na Maamu! | ACKO Platinum Health Plan</h6>
+            <span>17.4K views | <span>0:10</span> </span>
+          </div>
+        </div>
+
+
+        <div class="row mt-3 border-top outline-light pt-3 mx-1 g_cursor_pointer g_video">
+          <div class="col-12 col-lg-5">
+            <div class="g_thumbnail_video">
+              <video
+                preload="metadata"
+                src="video/Insurance_6.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h6>
+              Shift to ACKO na maamu! | ACKO Platinum Health Plan</h6>
+              <span>8K views | <span>0:10</span> </span>
+          </div>
+        </div>
+
+        <div class="row mt-3 border-top outline-light pt-3 mx-1 g_cursor_pointer g_video">
+          <div class="col-12 col-lg-5">
+            <div class="g_thumbnail_video">
+              <video
+                preload="metadata"
+                src="video/Insurance_7.mp4"
+              >
+             </video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h6>
+              ACKO ka solid wala health insurance try kar na mamu! | ACKO...</h6>
+              <span>8.2K views | <span>0:10</span> </span>
+          </div>
+        </div>
+        <!------------------------------car section b_tan---->
+        <div class="row mt-3 border-top outline-light pt-3 mx-1 g_cursor_pointer car_video ">
+          <div class="col-12 col-lg-5">
+            <div class="g_thumbnail_video">
+              <video
+                preload="metadata"
+                src="video/Car_1.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h6>
+              Shift to ACKO na maamu! | ACKO Platinum Health Plan</h6>
+              <span>8K views | <span>0:10</span> </span>
+          </div>
+        </div>
+
+        <div class="row mt-3 border-top outline-light pt-3 mx-1 g_cursor_pointer car_video ">
+          <div class="col-12 col-lg-5">
+            <div class="g_thumbnail_video">
+              <video
+                preload="metadata"
+                src="video/Car_2.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h6>
+              Shift to ACKO na maamu! | ACKO Platinum Health Plan</h6>
+              <span>8K views | <span>0:10</span> </span>
+          </div>
+        </div>
+
+        <div class="row mt-3 border-top outline-light pt-3 mx-1 g_cursor_pointer car_video">
+          <div class="col-12 col-lg-5">
+            <div class="g_thumbnail_video_car">
+              <video
+                preload="metadata"
+                src="video/Car_3.mp4"
+              ></video>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <h6>
+              Shift to ACKO na maamu! | ACKO Platinum Health Plan</h6>
+              <span>8K views | <span>0:10</span> </span>
+          </div>
+        </div>
+<!-------------------------------------Car btn-->
+
+   
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+   </section>  
+
+ <!------Join Acko Trusted-------------------------------------------------->
+
+ <section class=" container mt-5 text-center">
+  <h4 class="fw-bold">Join crores who trust ACKO</h4>
+  <div class="row my-5">
+    <div class="col-12 col-lg-3">
+      <div class="border-end">
+        <h1 class="g_text_primary fw-bold">2.8 crore+</h1>
+        <p>Customers insured</p>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3">
+      <div class="border-end">
+        <h1 class="g_text_primary fw-bold">8 crore+</h1>
+        <p>Policies issued</p>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3">
+      <div class="border-end">
+        <h1 class="g_text_primary fw-bold">94.54%</h1>
+        <p>Claim settlement ratio</p>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3">
+      <div>
+        <h1 class="g_text_primary fw-bold">12 minutes</h1>
+        <p>ClaiFastest claim settled</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------Middele Text Section Slider-->
+   <section >
+    <div class="text-center" style="border-top: 5px solid #EFE9FB ;">
+      <h3 class="my-5 fw-light">
+        <span class="fw-bold">Protect your vehicle</span> with exclusive
+        <br>
+        features on the <span class="fw-bold py-1" style="border-bottom: 3px solid #703BD9;">ACKO app</span>
+      </h3>
+    </div>
+   </section>    
+
+   <!---Official partner -->
+
+   <section >
+    <h4 class="text-center my-5">Official partner</h4>
+    <div class=" row g_offical_partner w-75 mx-auto my-4 justify-content-center ">
+      <div class="col-12 col-lg-2 g_border_img">
+        <div>
+          <img src="Images/knight_riders_logo.svg" alt="#">  
+        </div>
+      </div>
+      <div class="col-12 col-lg-2 g_border_img">
+        <div>
+          <img src="Images//Gujrat_titans.svg">
+        </div>
+      </div>
+      <div class="col-12 col-lg-2 g_border_img">
+        <div>
+          <img src="Images/mumbai_indians_logo.svg">
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!-------Rating Section  part -->
+
+   <section class="py-5" style="background: #f6f7fb">
+    <div class="container">
+      <div class="row g_reting_box">
+        <div class="col-12 col-lg-4">
+          <div >
+            <div style="color: #f99d1c;">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h6 class="fw-bold py-1">
+              Very good experience. Got the settlement done in less than 24
+              hours.
+            </h6>
+            <div class="d-flex ">
+              <div class="g_rating_img">
+                <img src="Images/Rahul Gupta.png" alt="">
+              </div>
+              <div class="px-2 py-1 avtar_content">
+                <h6>Rahul Gupta</h6>
+                <small>Delhi</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div>
+             <div style="color: #f99d1c;">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+             </div>
+            <h6 class="fw-bold py-1">
+              Thank you so much for the amazing <br> service, Special thanks to Mr. Rais Shaikh.
+            </h6>
+            <div class="d-flex ">
+              <div class="g_rating_img">
+                <img src="Images/Somnath Mane.png" alt="">
+              </div>
+              <div class="px-2 py-1 avtar_content">
+                <h6>Somnath Mane</h6>
+                <small>Delhi</small>
+              </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div>
+            <div style="color: #f99d1c;">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h6 class="fw-bold py-1">
+              Hassle free insurance & quick response. Absolutely best insurance company ever
+            </h6>
+            <div class="d-flex ">
+              <div class="g_rating_img">
+                <img src="Images/vinay_kumar.png" alt="">
+              </div>
+              <div class="px-2 py-1 avtar_content">
+                <h6>Vinil Kumar</h6>
+                <small>Hyderabad</small>
+              </div>
+            </div>
+      </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!----------------------------------------App Section-->
+    <section class="g_app_Wrapper text-center py-5">
+      <h3 class="fw-bold">ACKO Insurance on your favourite apps</h3>
+      <p>India’s top brands choose ACKO Insurance for their customers</p>
+      <div class="g_app_container ">
+        <div class="g_app_img">
+            <img src="Images/Amazon.svg" alt="#">
+        </div>
+        <div class="g_app_img">
+          <img src="Images/Rapido.svg" alt="#">
+      </div>
+      <div class="g_app_img">
+        <img src="Images/Myimages.svg" alt="#">
+    </div>
+        <div class="g_app_img">
+            <img src="Images/Rapido2.svg" alt="#">
+       </div>
+       <div class="g_app_img">
+        <img src="Images/RedBus.svg" alt="#">
+    </div>
+    <div class="g_app_img">
+      <img src="Images/Oyo.svg" alt="#">
+  </div>
+  <div class="g_app_img">
+    <img src="Images/Zomato.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/Goimages.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/Abhibus.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/Zimges.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/Lkimages.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/BottaleImages.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/HDFC.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/NImages.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/UC_images.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/BirdImages.svg" alt="#">
+</div>
+<div class="g_app_img">
+  <img src="Images/Cred.svg" alt="#">
+</div>
+
+      </div>
+    </section>
+
+    <!---------------------------------------------ACKO iMAGES ---------------------------->
+      <!--acko section-->
+      <section
+        style="background: #f6f7fb"
+        class="g_acko_section pt-5 pb-3 text-center"
+      >
+        <div class="g_container">
+          <h3 class="fw-bold">Here’s why you’ll love ACKO</h3>
+          <div id="acko_section" class="row py-3">
+            <!--dynamic elements-->
+          </div>
+        </div>
+      </section>
+      <!-------------------------------------Download Section-->
+      <section class="g_download_section " style="border-top: 2px solid #EFE9FB ; border-bottom: 2px solid #EFE9FB ;">
+        <div class="g_container">
+          <div class="row g_download_column">
+            <div class="col-12 col-lg-5">
+              <img width="120" src="Images/acko-company-logo.svg" alt="#" />
+              <h6 class="fw-bold my-3">ACKO General Insurance Limited</h6>
+              <p style="font-size: 14px; font-weight: 500;" >
+                2nd Floor, #36/5, Hustlehub One East, Somasandrapalya, 27th Main
+                Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102
+              </p>
+              <ul>
+                <li>
+                  <a href="" class="g_social_icon ">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="g_social_icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="g_social_icon">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="g_social_icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="g_social_icon">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-6 text-center mx-auto py-5 ">
+              <div
+                style="border-radius: 12px"
+                class="g_bg_primary_light w-100 mx-auto text-center py-4"
+              >
+                <h6 class="fw-bold mb-3">Download our ACKO app now!</h6>
+                <a href="">
+                  <img src="Images/google-play-footer.svg" alt="#" />
+                </a>
+                <a href="">
+                  <img src="Images/app-store-footer.svg" alt="#" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+ <!-------------------------------------------------------NavBar Section----------------------->
+    <nav class="g_container" >
+      <div id="footer_navbar" class="row pb-5" >
+      <!---dynamic things-->
+      </div>
+    </nav>
+
+    <!------------------------------Footer bar--------------------->
+    <footer style="background: #f6f7fb">
+      <div class="g_container">
+        <div>
+          <div class="g_footer_text fw-bold">
+          <p>CIN: U66000KA2016PLC138288 <span class="px-4">IRDAI Registration No: 157</span>
+            <span >Category: Non-Life Insurance </span></p>
+          </div>
+         <div class="g_footer_text_bottom ">
+          <P>
+            The use of images and brands are only for the purpose of indication and illustration. ACKO claims
+             no rights on the IP rights of any third parties. The ratings are derived from reviews and feedback received from Google and Facebook users on their respective platforms. | *Discount is calculated basis F&U filling rates. Product name: Private Car Policy - Bundled | UIN: IRDAN157RP0014V02201819 |
+          <span>   <br>        
+            Trade logo displayed above belongs to ACKO Technology & Services Pvt Ltd and used by ACKO General insurance 
+           Limited under License. For more details on risk factors, terms, conditions and exclusions, please read the policy wordings carefully before concluding a sale.
+          </span>
+          </P>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+      
+   </main>   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+     <script src="./Js/index.js"></script>
+</body>
+</html>

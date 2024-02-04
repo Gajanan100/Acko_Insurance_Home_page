@@ -1,0 +1,14 @@
+@media screen and (min-width:500px) {
+    .g_header_full_screen  {
+        display: flex !important;
+    }
+
+
+    body
+    {
+        box-sizing: border-box !important;
+        font-size: small;
+        
+    }
+
+}

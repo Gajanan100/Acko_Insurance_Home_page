@@ -1,0 +1,52 @@
+/*backgrouds*/
+.g_bg_primary {
+    background: #5920C5;
+}
+
+.g_bg_primary2 {
+    background: rgb(74, 31, 158) !important;
+}
+
+.g_bg_primary_light {
+    background: #EFE9FB;
+}
+
+.g_bg_success {
+    background: #44CB86;
+}
+
+.g_bg_dark {
+    background: #141323;
+}
+
+.g_bg_dark_light {
+    background: #0E0C23;
+}
+
+.g_bg_light {
+    background: #F6F7FB;
+}
+
+/*text*/
+
+.g_text_primary {
+    color: #703BD9;
+}
+
+/*outline*/
+
+.g_outline_success {
+    outline-color: #44CB86;
+}
+
+/*custom layout*/
+.g_container{
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+}
+
+/*overite existing btns*/
+.btn-success{
+    background: #108e4f;
+}

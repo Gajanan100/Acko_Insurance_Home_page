@@ -1,0 +1,41 @@
+try { 
+	(function (history){
+	var webengageReload = function () {
+		// async call to avoid breaking normal pushState calls
+		setTimeout(function () {
+			if (webengage && typeof webengage.reload === 'function') {
+				webengage.reload();
+			}
+        }, 1);
+	};
+
+    var pushState = history.pushState;
+    var replaceState = history.replaceState;
+
+    history.pushState = function() {
+ //async webengage reload
+        console.log("pushState");
+  webengageReload();
+        return pushState.apply(history, arguments);
+    };
+
+    history.replaceState = function() {
+        // async webengage reload
+        console.log("replaceState");
+webengageReload();
+        return replaceState.apply(history, arguments);
+    };
+
+    window.addEventListener('popstate', function(event) {
+// async webengage reload
+        console.log("popState");
+webengageReload();
+	});
+})(window.history);
+ } catch(e) { 
+ 	if (e instanceof Error) { 
+		var data = e.stack || e.description;
+		data = (data.length > 900 ? data.substring(0, 900) : data);
+	 	webengage.eLog(null, 'error', data, 'cwc-error','cwc', '~a61h7bg');
+	 }
+ }
