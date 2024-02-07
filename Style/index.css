@@ -5,22 +5,21 @@ body {
     font-style: normal;
 
 }
+
 ul {
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
 .g_screen_view .g_left {
-    width: 58%;
-    text-align: center;
-    padding-left: 140px;
+    width: 60%;
 }
 
-.g_screen_view .g_left li {
+.g_screen_view .g_left ul {
     list-style: none;
-    display:flex; 
+    display: flex;
     align-items: center;
-    
+    justify-content: space-between;
 }
 
 .g_screen_view .g_left a {
@@ -33,11 +32,36 @@ ul {
     font-size: 10px;
 }
 
-/* Service logo  */
+.g_header_full_screen {
+    display: none !important;
+}
 
+.g_small_screen_drawer {
+    width: 100%;
+    height: 117vh;
+    background: rgba(23, 23, 23, 0.368);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.g_screen_wrapper {
+    width: 50%;
+    height: 100%;
+    background: white;
+}
+
+.g_screen_wrapper nav ul a {
+    text-decoration: none;
+}
+
+/*Services*/
 .g_services {
     width: 35%;
-    margin: 40px auto;
+    margin: auto;
+    margin-bottom: 40px;
     cursor: pointer;
 }
 
@@ -57,12 +81,9 @@ ul {
     border-radius: 50%;
 }
 
-/* services car,bike,travel,life,etc */
-
+/* car  service_bananer */
 .g_banner_common .g_left_img {
-    width: 25% ;
-    height: 100% ;
-
+    width: 25%;
 
 }
 
@@ -71,27 +92,26 @@ ul {
 
 }
 
-.g_banner_common .g_center_form{
+.g_banner_common .g_center_form {
     border-radius: 15px;
     height: fit-content;
-    animation: bannerForm 0.8s forwards;  
+    animation: bannerForm 0.8s forwards;
 }
- @keyframes bbannerForman {
-    0%
-    {
+
+@keyframes bannerForm {
+    0% {
         opacity: 0;
         transform: translateY(50px);
     }
-    100%
-    {
+
+    100% {
         opacity: 1;
-        transform: translateY(0s);
+        transform: translateY(0);
     }
-    
- }
-   
+}
+
 .g_banner_common .g_center_form .g_icon {
-    width: 60px;
+    width: 40px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -130,14 +150,14 @@ ul {
 }
 
 .g_banner_common .g_right_img {
-    width: 25% ;
-    height: 100% ;
-}
+    width: 25%;
 
+}
 
 .g_health_service_banner .g_text_gradient {
     background: -webkit-linear-gradient(92.88deg, rgb(255, 107, 107) 5.34%, rgb(89, 32, 197) 84.32%) text;
     -webkit-text-fill-color: transparent;
+
 }
 
 /* video section */

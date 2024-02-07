@@ -1,17 +1,18 @@
 @media screen and (min-width:768px) {
     .g_header_full_screen  {
         display: flex !important;
-        text-wrap: wrap !important;
     }
-    .g_acko_mannage_size{
+    
+    .g_header_small_screen{
+            display: none ;
+        }
+    }
+    /* .g_acko_mannage_size{
         width: 100% !important;
         height: fit-content !important;
-        text-wrap: wrap !important;
 
     }
     .g_banner_common{
         width: 100% !important;
-        text-wrap: wrap !important;
 
-    }
-}
+    } */

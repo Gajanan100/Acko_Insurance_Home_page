@@ -30,54 +30,103 @@ crossorigin="anonymous"
 </head>
 <body>
     <!----All Screen -->
+    <!--screen view-->
     <div class="g_screen_view g_bg_primary">
-        <header class="g_container pt-3 d-flex justify-content-between align-items-center ">
-            <div class="g_left">
-                <nav>
-                    <ul class="d-flex justify-content-between align-items-center gap-5">
-                        <li>
-                            <a href="">
-                               <img src="Images/logo.svg">   
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                              Products <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                           </a>
-                        </li>
-                        <li>
-                            <a href="">
-                              Renewals <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                              Claims <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                              Resources
-                              <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                            </a>
-                        </li>
-            
-                    </ul>
-                </nav>
+      <!--header part small screen-->
+      <header
+        class="p-2 g_header_small_screen d-flex justify-content-between align-items-center"
+      >
+        <div>
+          <a href="">
+            <img src="Images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div id="open_slider_btn">
+          <i
+            class="fa fa-bars text-white"
+            style="font-size: 25px"
+            aria-hidden="true"
+          ></i>
+        </div>
+        <!-- //slider part for mobile small screen  -->
+        <div class="g_small_screen_drawer d-none">
+          <div class="g_screen_wrapper">
+            <div class="p-2 d-flex justify-content-between align-items-center">
+              <img src="Images/logo.svg" alt="" />
+              <i
+                id="close_slider_btn"
+                class="fa fa-window-close"
+                style="font-size: 25px"
+                aria-hidden="true"
+              ></i>
             </div>
-            <div class="g_right" style=" padding-right: 140px;">
-                <button class="btn btn-light">Login</button>
-                <button class="btn btn-success ms-2">Sign Up</button>
-              </div>
-        </header>
-      <!----service logo-->
-      <main>
-        <div class="g_acko_mannage_size">
+            <nav>
+              <ul class="ps-3 nav flex-column">
+                <li>
+                  <a href=""> Products </a>
+                </li>
+                <li>
+                  <a href=""> Renewals </a>
+                </li>
+                <li>
+                  <a href=""> Claims </a>
+                </li>
+                <li>
+                  <a href=""> Resources </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--header part full screen-->
+      <header
+        class="g_container pt-3 d-flex justify-content-between align-items-center g_header_full_screen"
+      >
+        <div class="g_left">
+          <nav>
+            <ul>
+              <li>
+                <a href="">
+                  <img src="Images/logo.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Products <i class="fa fa-chevron-down" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a href="">
+                  Renewals <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Claims <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  Resources
+                  <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="g_right">
+          <button class="btn btn-light">Login</button>
+          <button class="btn btn-success ms-2">Sign Up</button>
+        </div>
+      </header>
+    </div>
+    <main>
+      <!--service section-->
+      <div class="g_bg_primary pt-5">
         <!--service section-->
-        <div class="g_bg_primary pt-3">
-
         <section
-          class="g_services d-flex justify-content-between align-items-center text-center "
+          class="g_services d-flex justify-content-between align-items-center text-center"
         >
           <div class="g_box">
             <div id="car" class="g_icon text-white">
@@ -110,132 +159,31 @@ crossorigin="anonymous"
             <h6>Travel</h6>
           </div>
         </section>
-
-        <!-- services   car -->
-         <section class="g_car_service_banner g_banner_common  d-flex justify-content-between ">
-            <div class="g_left_img ">
-                <img 
-                width="80%"
-                height="100%" 
-                src="Images/Saif Ali-khan.png" >
-            </div>
-            <div class="g_center_form_box ">
-                <div class="g_center_form g_bg_primary2 p-3 py-3 ">
-                  <form action="">
-                    <h4 class="text-white text-center pt-2">
-                      Get up to 85%* off on car insurance
-                    </h4>
-                    <div class="g_input_box bg-white d-flex p-3">
-                      <input
-                        type="text"
-                        placeholder="Enter Your Car Number"
-                        
-                      />
-                      <button class="btn btn-success">Get quote</button>
-                    </div>
-                  </form>
-                </div>
-                <div
-                  class="g_center_form g_bg_primary2 p-3 mt-3 text-white d-flex justify-content-between"
-                >
-                  <div class="g_icon g_bg_primary">
-                    <i class="fa fa-car" aria-hidden="true"></i>
-                  </div>
-                  <div class="g_content">
-                    <h6>Looking to insure brand new car?</h6>
-                    <h6>Zero commissions, big savings</h6>
-                  </div>
-                  <button class="btn btn-outline-light">Check prices</button>
-                </div>
-              </div>
-    
-              <div class="g_right_img ">
-            <img 
-            width="80%"
-            height="100%" src="Images/Sara.png" class="rounded float-end">
-          </div>
-
-         </section>  
-         
-         <!-----Service Bike-->
-
-         <section class="g_bike_service_banner g_banner_common  d-flex justify-content-between">
-          <div class="g_left_img ">
-              <img 
+        <!-- car  service_bananer-->
+        <section
+          class="g_car_service_banner g_banner_common d-flex justify-content-between d-none"
+        >
+          <div class="g_left_img">
+            <img
               width="80%"
-              height="100%" 
-              src="Images/Bike left Side.svg" >
+              height="100%"
+              src="Images/Saif Ali-khan.png"
+              alt=""
+            />
           </div>
-          <div class="g_center_form_box ">
-              <div class="g_center_form g_bg_primary2 p-3 py-3 ">
-                <form action="">
-                  <h4 class="text-white text-center pt-2">
-                    Bike insurance starting at ₹555
-                  </h4>
-                  <div class="g_input_box bg-white d-flex p-3">
-                    <input
-                      type="text"
-                      placeholder="Enter Your Car Number"
-                      style="flex: 1"
-                    />
-                    <button class="btn btn-success">Get quote</button>
-                  </div>
-                </form>
-              </div>
-              <div
-                class="g_center_form g_bg_primary2 p-3 mt-3 text-white d-flex justify-content-between"
-              >
-                <div class="g_icon g_bg_primary">
-                  <i class="fa fa-car" aria-hidden="true"></i>
-                </div>
-                <div class="g_content">
-                  <h6>Looking to insure brand new car?</h6>
-                  <h6>Zero commissions, big savings</h6>
-                </div>
-                <button class="btn btn-outline-light">Check prices</button>
-              </div>
-            </div>
-  
-            <div class="g_right_img ">
-          <img 
-          width="80%"
-          height="100%" src="Images/Bike Right side.svg" class="rounded float-end">
-        </div>
-       </section>      
-
-       <!----Health Service -->
-       
-       <section class="g_health_service_banner g_banner_common  d-flex justify-content-between ">
-        <div class="g_left_img">
-            <img 
-            width="80%"
-            height="100%" 
-            src="Images/Sanju-Bhai.png" >
-        </div>
-        <div class="g_center_form_box ">
-            <div class="g_center_form g_bg_primary2 p-3 py-3 ">
+          <div class="g_center_form_box">
+            <div class="g_center_form g_bg_primary2 p-3 py-4">
               <form action="">
-                <!-- <h4 class="text-white text-center pt-2">
-                  Bike insurance starting at ₹555
-                </h4> -->
-                <div
-                  class="bg-white mx-auto p-1 rounded-pill px-3"
-                  style="width: 50%"
-                >
-                  <small class="g_text_gradient text-center" style="font-size: 12px"
-                    >ACKO Platinum Health Plan</small
-                  >
-                </div>
-                <h4 class="text-white text-center mt-3 fw-bold">
-                  India’s #1 health plan
+                <h4 class="text-white text-center">
+                  Get up to 85%* off on car insurance
                 </h4>
-                <p class="text-center fw-bold text-white mb-3 mt-2">
-                  rated by <span style="color: #f99d1c">mint</span>
-                </p>
-                <div class="text-center ">
-                  <button class="btn btn-success px-5 py-2 ">
-                    Check Prices
-                  </button>
+                <div class="g_input_box bg-white d-flex p-3">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Car Number"
+                    style="flex: 1"
+                  />
+                  <button class="btn btn-success">Get quote</button>
                 </div>
               </form>
             </div>
@@ -253,94 +201,228 @@ crossorigin="anonymous"
             </div>
           </div>
 
-          <div class="g_right_img ">
-        <img 
-        width="80%"
-        height="100%" src="Images/circuit.png" class="rounded float-end">
-      </div>
+          <div class="g_right_img d-flex justify-content-end">
+            <img
+              width="80%"
+              height="100%"
+              src="Images/Sara.png"
+              alt=""
+            />
+          </div>
+        </section>
 
-     </section>      
-
-     <!------Life section --> 
-
-     <section class="g_life_service_banner g_banner_common  d-flex justify-content-between ">
-      <div class="g_left_img">
-          <img 
-          width="80%"
-          height="100%" 
-          src="Images/Life-left-side.svg" >
-      </div>
-      <div class="g_center_form_box ">
-          <div class="g_center_form g_bg_primary2 p-3 py-3 ">
-            <form action="">
-              <!-- <h4 class="text-white text-center pt-2">
-                Bike insurance starting at ₹555
-              </h4> -->
-              <div
-                class="text-center text-white pt-3">
-                <h2>Coming soon </h2>
-                <h6 class="text-white text-center  ">
-                  Life insurance is about to get a whole lot better
-                </h6>  
-              </div>
-              <div class="text-center pt-4">
-                <button class="btn btn-success px-5 py-2 bg-success ">
-                  Check Prices
-                </button>
-                <div class="text-center text-white pt-3 py-2">
-                  <h6 style="font-size: 8px;">A product of ACKO Life Insurance - ARN:ALIL/2023-24/09/001  </h6>
+        <!--bike banner-->
+        <section
+          class="g_bike_service_banner g_banner_common d-flex justify-content-between d-none"
+        >
+          <div class="g_left_img">
+            <img
+              width="80%"
+              height="100%"
+              src="Images/Bike left Side.svg"
+              alt=""
+            />
+          </div>
+          <div class="g_center_form_box">
+            <div class="g_center_form g_bg_primary2 p-3 py-4">
+              <form action="">
+                <h4 class="text-white text-center">
+                  Bike insurance starting at ₹555
+                </h4>
+                <div class="g_input_box bg-white d-flex p-3">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Car Number"
+                    style="flex: 1"
+                  />
+                  <button class="btn btn-success">Get quote</button>
                 </div>
+              </form>
+            </div>
+            <div
+              class="g_center_form g_bg_primary2 p-3 mt-3 text-white d-flex justify-content-between"
+            >
+              <div class="g_icon g_bg_primary">
+                <i class="fa fa-car" aria-hidden="true"></i>
               </div>
-            </form>
+              <div class="g_content">
+                <h6>Looking to insure brand new car?</h6>
+                <h6>Zero commissions, big savings</h6>
+              </div>
+              <button class="btn btn-outline-light">Check prices</button>
+            </div>
           </div>
-        </div>
 
-        <div class="g_right_img ">
-      <img 
-      width="80%"
-      height="100%" src="Images/Life-side-images.svg" class="rounded float-end">
-    </div>
-
-   </section>      
- 
-   <!----Travel section -->
-
-   <section class="g_travel_service_banner g_banner_common  d-flex justify-content-between">
-    <div class="g_left_img">
-        <img 
-        width="80%"
-        height="100%" 
-        src="Images/Travel Left side images.svg" >
-    </div>
-    <div class="g_center_form_box ">
-      <div class="g_center_form g_bg_primary2 p-3 py-3 ">
-        <form action="">
-          <!-- <h4 class="text-white text-center pt-2">
-            Bike insurance starting at ₹555
-          </h4> -->
-          <div
-            class="text-center text-white pt-3  ">
-            <h3 class="fw-bold">Travel the world<br> without a worry</h3>
-            <h6 class="pt-2 fw-small">From medical emergencies to<br>
-              missed flights, we cover it all.
-              </h6>
+          <div class="g_right_img d-flex justify-content-end">
+            <img
+              width="80%"
+              height="100%"
+              src="Images/Bike Right side.svg"
+              alt=""
+            />
           </div>
-          <div class="text-center pt-4 pb-2" >
-            <button class="btn btn-success   bg-success " style="padding: 9px 80px 9px 80px ;">
-              Let's Go 
-            </button>
+        </section>
+        <!--health banner-->
+        <section
+          class="g_health_service_banner g_banner_common d-flex justify-content-between d-none"
+        >
+          <div class="g_left_img">
+            <img
+              width="80%"
+              height="100%"
+              src="Images/Sanju-Bhai.png"
+              alt=""
+            />
           </div>
-        </form>
+          <div class="g_center_form_box pb-5">
+            <div class="g_center_form g_bg_primary2 p-3 py-4">
+              <form action="">
+                <div
+                  class="bg-white mx-auto p-1 rounded-pill px-3"
+                  style="width: max-content"
+                >
+                  <small class="g_text_gradient" style="font-size: 12px"
+                    >ACKO Platinum Health Plan</small
+                  >
+                </div>
+                <h4 class="text-white text-center mt-4 fw-bold">
+                  India’s #1 health plan
+                </h4>
+                <p class="text-center fw-bold text-white mb-4 mt-2">
+                  rated by <span style="color: #f99d1c">mint</span>
+                </p>
+                <div class="text-center">
+                  <button class="btn btn-success px-5 py-2">
+                    Check Prices
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div
+              class="g_center_form g_bg_primary2 p-3 mt-3 text-white d-flex gap-3"
+            >
+              <div class="g_icon g_bg_primary">
+                <img width="100%" src="Images/logo.svg" alt="" />
+              </div>
+              <div class="g_content">
+                <h6>Corporate health policy from ACKO?</h6>
+                <h6 style="cursor: pointer">
+                  Install App
+                  <i
+                    class="fa fa-chevron-right"
+                    style="font-size: 10px"
+                    aria-hidden="true"
+                  ></i>
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="g_right_img d-flex justify-content-end">
+            <img
+              width="80%"
+              height="100%"
+              src="Images/circuit.png"
+              alt=""
+            />
+          </div>
+        </section>
+        <!--life banner-->
+        <section
+          class="g_life_service_banner g_banner_common d-flex justify-content-between d-none"
+        >
+          <div class="g_left_img">
+            <img
+              width="80%"
+              height="100%"
+              src="Images/Life-left-side.svg"
+              alt=""
+            />
+          </div>
+          <div class="g_center_form_box">
+            <div
+              class="g_center_form g_bg_primary2 p-3 py-4 text-center text-white"
+            >
+              <form action="">
+                <h4 class="text-white text-center mt-4 fw-bold">
+                  Comming Soon
+                </h4>
+                <p
+                  style="font-size: 15px"
+                  class="text-center text-white mb-4 mt-2"
+                >
+                  Life insurance is about to get a whole lot better
+                </p>
+                <div class="text-center">
+                  <button class="btn btn-success rounded-3 px-5 py-2">
+                    Get Early Access
+                  </button>
+                </div>
+              </form>
+              <span style="font-size: 8px"
+                >A product of ACKO Life Insurance -
+                ARN:ALIL/2023-24/09/001</span
+              >
+            </div>
+          </div>
+
+          <div class="g_right_img d-flex justify-content-end">
+            <img
+              width="80%"
+              height="100%"
+              src="Images/Life-side-images.svg"
+              alt=""
+            />
+          </div>
+        </section>
+        <!--travel banner-->
+        <section
+          class="g_travel_service_banner g_banner_common d-flex justify-content-between d-none"
+        >
+          <div class="g_left_img">
+            <img
+              width="80%"
+              height="100%"
+              src="Images/Travel Left side images.svg"
+              alt=""
+            />
+          </div>
+          <div class="g_center_form_box">
+            <div
+              class="g_center_form g_bg_primary2 p-3 py-4 text-center text-white"
+            >
+              <form action="">
+                <h4 class="text-white text-center mt-4 fw-bold">
+                  Dreaming of stress-free <br />
+                  travels? We made it real.
+                </h4>
+                <p
+                  style="font-size: 15px"
+                  class="text-center text-white mb-4 mt-2"
+                >
+                  International Travel Insurance <br />
+                  starting at <span class="fw-bold">Rs. 10/day</span>
+                </p>
+                <div class="text-center">
+                  <button class="btn btn-success rounded-3 px-5 py-2">
+                    Explore Now
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="g_right_img d-flex justify-content-end">
+            <img
+              width="80%"
+              height="100%"
+              src="Images/Travel right side images.svg"
+              alt=""
+            />
+          </div>
+        </section>
       </div>
-    </div>
-      <div class="g_right_img ">
-    <img 
-    width="80%"
-    height="100%" src="Images/Travel right side images.svg" class="rounded float-end">
-  </div>
- </section>      
-  </div>  
-</div>   
+ 
         <!----Video section-->     
 <section class="g_video_section g_bg_dark text-white py-5">
   <div class="g_video_container text-center ">

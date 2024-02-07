@@ -6,7 +6,7 @@ var health = document.getElementById("health")
 var life = document.getElementById("life")
 var travel = document.getElementById("travel")
 
-//Service Banner
+//banners
 var carBanner = document.querySelector(".g_car_service_banner")
 var bikeBanner = document.querySelector(".g_bike_service_banner")
 var healthBanner = document.querySelector(".g_health_service_banner")
@@ -16,18 +16,8 @@ var travelBanner = document.querySelector(".g_travel_service_banner")
 
 window.onload = function () {
     car.classList.add("active")
-    bike.classList.remove("active")
-    health.classList.remove("active")
-    life.classList.remove("active")
-    travel.classList.remove("active")
-
     //banner
     carBanner.classList.remove("d-none")
-    bikeBanner.classList.add("d-none")
-    healthBanner.classList.add("d-none")
-    lifeBanner.classList.add("d-none")
-    travelBanner.classList.add("d-none")
-
 }
 
 bike.addEventListener("click", function (event) {
@@ -36,8 +26,8 @@ bike.addEventListener("click", function (event) {
     life.classList.remove("active")
     travel.classList.remove("active")
     bike.classList.add("active")
-//Service Banner
-   carBanner.classList.add("d-none")
+    //banner
+    carBanner.classList.add("d-none")
     bikeBanner.classList.remove("d-none")
     healthBanner.classList.add("d-none")
     lifeBanner.classList.add("d-none")
@@ -50,8 +40,8 @@ car.addEventListener("click", function (event) {
     travel.classList.remove("active")
     bike.classList.remove("active")
     car.classList.add("active")
-//Service Banner
-carBanner.classList.remove("d-none")
+    //banner
+    carBanner.classList.remove("d-none")
     bikeBanner.classList.add("d-none")
     healthBanner.classList.add("d-none")
     lifeBanner.classList.add("d-none")
@@ -64,8 +54,8 @@ health.addEventListener("click", function (event) {
     bike.classList.remove("active")
     health.classList.add("active")
 
-//Service Banner
-healthBanner.classList.remove("d-none")
+    //banner
+    healthBanner.classList.remove("d-none")
     bikeBanner.classList.add("d-none")
     carBanner.classList.add("d-none")
     lifeBanner.classList.add("d-none")
@@ -78,8 +68,8 @@ life.addEventListener("click", function (event) {
     bike.classList.remove("active")
     life.classList.add("active")
 
-//Service Banner
-lifeBanner.classList.remove("d-none")
+    //banner
+    lifeBanner.classList.remove("d-none")
     bikeBanner.classList.add("d-none")
     carBanner.classList.add("d-none")
     healthBanner.classList.add("d-none")
@@ -93,8 +83,8 @@ travel.addEventListener("click", function (event) {
     life.classList.remove("active")
     travel.classList.add("active")
 
-//Service Banner
-travelBanner.classList.remove("d-none")
+    //banner
+    travelBanner.classList.remove("d-none")
     bikeBanner.classList.add("d-none")
     carBanner.classList.add("d-none")
     healthBanner.classList.add("d-none")
@@ -128,16 +118,19 @@ travelBanner.classList.remove("d-none")
 
 //   ------Another Ways---------------------
 
-// document.addEventListener("click", function (event) {
-//     const insurance_video=event.target.contains("insurance_video")
-    
-//         const isExist = ele.classList.contains("insurance_video")
-//         if (isExist) {
-//             event.target.classList.add("g_video")
-//             ele.classList.remove("car_video")
+// document.addEventListener("click",function(event){
+//     const videos=event.target.querySelector(".insurance_video")
+//     if(videos)
+//     {
+//         const insuvideo=document.querySelectorAll(".g_video")
+//         {
+//             if(insuvideo)
+//                 event.classList("g_video") 
+//            else
+//             event.classList("car_video")
+//            }
 //         }
-
-    
+//     event.target.classList.add("car_video")
 // })
 
 //video section js
@@ -302,3 +295,15 @@ for (let i = 0; i < footerNavData.length; i++) {
 
 
 
+//toggle mobile drawer
+const openSlideBtn = document.getElementById("open_slider_btn")
+const closeSlideBtn = document.getElementById("close_slider_btn")
+const drawer = document.querySelector(".g_small_screen_drawer")
+
+openSlideBtn.addEventListener("click", function () {
+    drawer.classList.remove("d-none")
+})
+
+closeSlideBtn.addEventListener("click", function () {
+    drawer.classList.add("d-none")
+})
